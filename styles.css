@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    font-family: Arial,sans-serif;
+}
+
+.euphoria-script-regular {
+  font-family: "Euphoria Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body{
+    height:100vh;
+}
+
+.container{
+    display:flex;
+    height:100vh;
+}
+
+.left{
+    flex:1;
+    background: url(images/krish.webp) center no-repeat;
+    background-size:cover;
+    position:relative;
+    color:#d8bcab;
+}
+
+.logo{
+    position:absolute;
+    top:6%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding:20px 0;
+    gap:10px;
+}
+
+.logo img{
+    width:60px;
+}
+
+.credits{
+    position:absolute;
+    bottom:10px;
+    width:100%;
+    text-align:center;
+}
+
+.credits a {
+	color: white;
+}
+
+.credits a:hover {
+	color: rgb(209, 204, 204);
+}
+
+.right{
+    flex:1.5;
+    background: #877a72;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+}
+
+.right .intros p {
+	font-weight: bold;
+}
+
+.intros{
+    padding: 40px;
+    font-size:18px;
+}
+
+.form-section{
+    background-color: #d8bcab;
+    padding: 30px 40px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2{
+    margin-bottom:20px;
+}
+
+.form-action{
+    padding: 0 40px;
+}
+
+.form-action button{
+    margin-top: 20px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+}
+
+.you{
+    margin-top: 10px;
+}
+
+
+label {
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin-bottom: 5px;
+}
+
+/*inputs*/
+input{
+    padding:8px;
+    border:2px solid #e5e7eb ;
+    border-radius:4px ;
+     width: 100%;
+}
+
+input:focus{
+    border:1px solid blue;
+    box-shadow:0 0 5px rgba(0, 0, 255, 0.3);
+    outline:none;
+}
+
+input:invalid:not(:focus):not(:placeholder-shown){
+    border: 2px solid red;
+}
+
+/*buttons*/
+button{
+    margin-top: 20px;
+	padding: 12px 20px;
+	background-color: #db9020;
+	color: white;
+	border: none;
+	border-radius: 6px;
+	cursor: pointer;
+    box-shadow: 0 4px 0 #a47c48;
+    transition:all 0.1s ease;
+}
+
+button:active {
+	transform: translateY(4px);
+	box-shadow: 0 0 0 #ac7b12;
+}
+
+button:hover{
+    background:#ce9643;
+}
+
+/*login*/
+.login {
+	margin-top: 25px;
+}
+
+.login a{
+    text-decoration:none;
+    font-weight:bold;
+    color: #db9020;
+}
+
+/*For Mobile-Phones or Tabel*/
+@media(max-width:768px){
+
+    .container{
+        flex-direction:column;
+    }
+    
+    .left {
+        height: 200px;
+	}
+    
+	.right {
+        flex: none;
+	}
+    .grid{
+        grid-template-columns: 250px;
+        justify-content:center;
+    }
+    .intros,
+	.form-section,
+	.form-action {
+		padding: 20px;
+	}
+
+      .logo h1 {
+		font-size: 28px;
+	}
+
+	.intros {
+		font-size: 16px;
+	}
+
+	.form-section h2 {
+		text-align: center;
+	}
+
+    .form-action {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	.right .intros p {
+	 text-align: center;
+    }   
+
+}
