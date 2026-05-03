@@ -1,6 +1,6 @@
 # Dwaraka Auth Portal
 
-A modern yet responsive sign-up form inspired by Indian heritage themes.
+A modern yet responsive sign-up form inspired by Indian heritage theme.
 
 This project focuses on building clean UI layouts, handling form validation, and creating responsive designs.
 
