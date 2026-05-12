@@ -1,4 +1,4 @@
-# Dwaraka Auth Portal
+# Dwaraka Auth Portals
 
 A modern yet responsive sign-up form inspired by Indian heritage theme.
 
